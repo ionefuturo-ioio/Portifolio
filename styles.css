@@ -1,0 +1,86 @@
+body {
+  font-family: 'Segoe UI', Tahoma, sans-serif;
+  margin: 0;
+  background: #0d1117;
+  color: #c9d1d9;
+}
+
+header {
+  text-align: center;
+  padding: 2rem;
+  background: #161b22;
+}
+
+header .perfil {
+  width: 120px;
+  border-radius: 50%;
+  border: 3px solid #58a6ff;
+}
+
+nav a {
+  margin: 0 1rem;
+  color: #58a6ff;
+  text-decoration: none;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+section {
+  padding: 2rem;
+}
+
+/* Grid de proyectos */
+.grid-proyectos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+}
+
+.repo {
+  background: #161b22;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+  text-align: center;
+}
+
+.project-img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  transition: transform 0.3s;
+}
+
+.project-img:hover {
+  transform: scale(1.05);
+}
+
+/* Badges estilo GitHub */
+.badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.badge {
+  background: #21262d;
+  color: #58a6ff;
+  padding: 0.6rem 1rem;
+  border-radius: 20px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.badge:hover {
+  background: #58a6ff;
+  color: #0d1117;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  background: #161b22;
+}
