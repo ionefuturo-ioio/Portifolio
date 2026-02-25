@@ -1,3 +1,5 @@
+![Portifolio Banner](banner.png)
+
 # Portifolio - Ione Carvalho
 
 Bienvenido a mi portifolio profesional como desarrollador web.  
@@ -66,3 +68,4 @@ Cada proyecto incluye una breve descripción y un enlace a su demo en GitHub Pag
 ## 🌍 Publicación
 Este portifolio está disponible en **GitHub Pages**:  
 👉 [https://ionefuturo-ioio.github.io/Portifolio/](https://ionefuturo-ioio.github.io/Portifolio/)
+
