@@ -1,4 +1,4 @@
-![Portifolio Banner](banner.png)
+![Portifolio Banner](Copilot_20260225_200625.png)
 
 # Portifolio - Ione Carvalho
 
