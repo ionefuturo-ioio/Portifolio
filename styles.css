@@ -1,3 +1,4 @@
+/* Estilo base */
 body {
   font-family: 'Segoe UI', Tahoma, sans-serif;
   margin: 0;
@@ -5,6 +6,7 @@ body {
   color: #c9d1d9;
 }
 
+/* Header */
 header {
   text-align: center;
   padding: 2rem;
@@ -17,6 +19,7 @@ header .perfil {
   border: 3px solid #58a6ff;
 }
 
+/* Navegación */
 nav a {
   margin: 0 1rem;
   color: #58a6ff;
@@ -27,6 +30,7 @@ nav a:hover {
   text-decoration: underline;
 }
 
+/* Secciones */
 section {
   padding: 2rem;
 }
@@ -46,14 +50,15 @@ section {
   text-align: center;
 }
 
-.project-img {
+.project {
   width: 100%;
+  height: auto;
   border-radius: 8px;
   margin-bottom: 1rem;
   transition: transform 0.3s;
 }
 
-.project-img:hover {
+.project:hover {
   transform: scale(1.05);
 }
 
@@ -62,6 +67,7 @@ section {
   display: flex;
   flex-wrap: wrap;
   gap: 1rem;
+  justify-content: center;
 }
 
 .badge {
@@ -79,8 +85,37 @@ section {
   color: #0d1117;
 }
 
+/* Footer */
 footer {
   text-align: center;
   padding: 1rem;
   background: #161b22;
 }
+
+/* Responsividad */
+@media (max-width: 768px) {
+  header {
+    padding: 1rem;
+  }
+
+  header .perfil {
+    width: 90px;
+  }
+
+  nav {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-top: 1rem;
+  }
+
+  .grid-proyectos {
+    grid-template-columns: 1fr;
+  }
+
+  .badge {
+    font-size: 0.85rem;
+    padding: 0.4rem 0.8rem;
+  }
+}
+
