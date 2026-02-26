@@ -17,6 +17,7 @@ header .perfil {
   width: 120px;
   border-radius: 50%;
   border: 3px solid #58a6ff;
+  animation: fadeIn 1.2s ease-in-out;
 }
 
 /* Navegación */
@@ -24,15 +25,18 @@ nav a {
   margin: 0 1rem;
   color: #58a6ff;
   text-decoration: none;
+  transition: color 0.3s;
 }
 
 nav a:hover {
   text-decoration: underline;
+  color: #1f6feb;
 }
 
 /* Secciones */
 section {
   padding: 2rem;
+  animation: fadeInUp 1s ease-in-out;
 }
 
 /* Grid de proyectos */
@@ -48,6 +52,9 @@ section {
   border-radius: 8px;
   box-shadow: 0 2px 8px rgba(0,0,0,0.3);
   text-align: center;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 0.8s ease forwards;
 }
 
 .project {
@@ -55,11 +62,14 @@ section {
   height: auto;
   border-radius: 8px;
   margin-bottom: 1rem;
-  transition: transform 0.3s;
+  transition: transform 0.3s, opacity 0.3s;
+  opacity: 0;
+  animation: fadeIn 1s ease forwards;
 }
 
 .project:hover {
   transform: scale(1.05);
+  opacity: 0.9;
 }
 
 /* Badges estilo GitHub */
@@ -77,12 +87,13 @@ section {
   border-radius: 20px;
   text-decoration: none;
   font-weight: bold;
-  transition: background 0.3s;
+  transition: background 0.3s, transform 0.3s;
 }
 
 .badge:hover {
   background: #58a6ff;
   color: #0d1117;
+  transform: scale(1.1);
 }
 
 /* Footer */
@@ -90,6 +101,18 @@ footer {
   text-align: center;
   padding: 1rem;
   background: #161b22;
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+/* Animaciones */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
 }
 
 /* Responsividad */
