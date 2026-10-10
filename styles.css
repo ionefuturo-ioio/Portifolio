@@ -6,6 +6,15 @@ body {
   color: #c9d1d9;
 }
 
+/* Enlaces legibles sobre fondo oscuro */
+a {
+  color: #58a6ff;
+}
+
+a:hover {
+  color: #79c0ff;
+}
+
 /* Header */
 header {
   text-align: center;
