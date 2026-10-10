@@ -40,7 +40,9 @@ section {
 }
 
 /* Grid de proyectos */
-.grid-proyectos {
+.grid-proyectos,
+.grid-projects,
+.grid-projetos {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 2rem;
@@ -132,7 +134,9 @@ footer {
     margin-top: 1rem;
   }
 
-  .grid-proyectos {
+  .grid-proyectos,
+  .grid-projects,
+  .grid-projetos {
     grid-template-columns: 1fr;
   }
 
